@@ -20,6 +20,43 @@
     <ol hidden>
       <li>В разработке!!</li>
     </ol>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Личная информация</legend>
+        <label for="username">Имя:</label>
+        <input type="text">
+        <label for="username">Электронная почта:</label>
+        <input type="email">
+        <label for="username">Дата рождения:</label>
+        <input type="date">        
+      </fieldset>
+      <fieldset>
+        <legend>Пол</legend>
+        <label><input type="radio" name="gender" value="male"> Мужской</label>
+        <label><input type="radio" name="gender" value="female"> Женский</label>
+      </fieldset>
+      <fieldset>
+        <legend>Интересы</legend>
+         <select name="intereses" id="intereses">
+          <optgroup label="IT">
+            <option value="python">Кодить на Пайтоне</option>
+            <option value="cpp">Кодить на плюсах</option>
+            <option value="isapra">Исаприть</option>
+          </optgroup>
+          <optgroup label="Распитие">
+            <option value="vodka">Водка</option>
+            <option value="kagor">Кагор</option>
+            <option value="otherbuhlo">Остальная чушь</option>
+          </optgroup>
+         </select>
+      </fieldset>
+      <fieldset>
+        <legend>Комментарий</legend>
+        <textarea name="comments" id="comments" cols="50" rows="4"></textarea>
+      </fieldset>
+      <input type="submit" value="Отправить">
+      <input type="reset" value="Очистить">
+    </form>
   </main>
   <footer>
     2024 (с) Кыс Пушист
