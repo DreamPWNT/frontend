@@ -3,7 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Сайт о Приморском">
+  <meta name="keywords" content="Приморский, ПГТ, Крым, Феодосия, Изумруд, Лоцман">
   <title>Лучший посёлок в мире Приморский</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link href="styles/style.css" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -99,6 +103,30 @@
         </tr>
       </tfoot>
     </table>
+    <details>
+      <summary>Районы посёлка</summary>
+      <p>Деревня</p>
+      <p>Посёлок</p>
+      <p>Башня</p>
+      <p>Просвещение</p>
+    </details>
+    <details>
+      <summary>Соседи посёлка</summary>
+      <p>Песчанка</p>
+      <p>Берегове</p>
+      <p>Батальное</p>
+      <p>Золотой пляж</p>
+    </details>
+    <button onclick="document.getElementById('feedbackDialog').showModal();">Обратная связь</button>
+    <dialog id="feedbackDialog">
+      <form method="dialog">
+        <p><label>Ваше сообщение:<br><textarea name="message"></textarea></label></p>
+        <menu>
+          <button value="cancel">Отмена</button>
+          <button id="confirmBtn" value="default">Отправить</button>
+        </menu>
+      </form>
+    </dialog>
   </main>
   <footer>
     2024 (с) Кыс Пушист
